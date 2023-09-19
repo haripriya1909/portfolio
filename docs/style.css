@@ -2,29 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Mada:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&family=Mada:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
 
-body {
-    font-family: 'Poppins', sans-serif;
-}
 html , body{
     height: 100%;
     margin: 0;
     padding: 0;
-}
-span{
-    text-decoration: none;
+    font-family: "Mada", sans-serif;
 }
 html {
     scroll-behavior: smooth;
 }
 
-p {
-    color: rgb(85, 85, 85);
+div{
+    text-decoration: none;
+}
+/* Transition */
+.main{
+    height: 100%;
 }
 
-/* Transition */
-a .btn {
-    transition: all 300ms ease; /* To make smooth changes to elements */
-}
 .nav-part{
     height: 30%;
 }
@@ -46,7 +41,7 @@ a .btn {
 }
 
 #desktop-nav {
-    
+    position: fixed;
     height: 15vh;
     align-items: center;
     justify-content: space-around;
@@ -63,15 +58,16 @@ a .btn {
     font-family: "Crimson Text", serif;
     color: #fff;
     text-shadow: 2px;
-    margin: 2.4rem;
+    margin: 2.2rem;
 }
 
 
 /* HAMBURGER STUFF */
 
 #mobile-nav {
+    position: fixed;
     color: #fff;
-    height: 100%;
+    height: 30%;
     align-items: center;
     justify-content: space-around;
     background-color: rgba(57, 79, 244, 0.9);
@@ -111,20 +107,77 @@ a .btn {
 
 
 .intro{
-    background-color: antiquewhite;
-    width: 50%;
+    color: #ffe;
+    padding: 10%;
+    background-color: #48d8a4;
+    width: 100%;
     height: 100%;
     overflow: hidden;
     box-sizing: border-box;
     margin: 0;
 }
-.right{
-    background-color: rgb(172, 115, 226);
-    width: 50%;
+/* .intro h1{
+    width: 80%;
+} */
+.flower{
+    padding: 50%;
+    margin:10% 2% 4% 40%;
+    width: 20%;
     height: 50%;
     overflow: hidden;
     box-sizing: border-box;    
+    padding: 5%;
 }
-.no-underline{
-    text-underline-offset: none;
+.flower img{
+    width: 300px;
+    height: 300px;
+    border: 4px solid #f6e6e0;
+    
 }
+.pic img{
+    size: 2rem;
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+
+}
+.left_sec{
+    width:45%;
+    padding:1%;
+}
+.right_sec{
+    width:60%;
+    padding:1%;
+
+}
+.right_sec h4{
+    font-family: "Crimson Text", serif;
+    color:#7689d8;
+    font-size: 2rem;
+}
+.right_sec p{
+    color:black;
+    font-size: 1.4rem;
+    margin-right: 2%;
+}
+.head{
+    height: 20%;
+    margin-left: 10%;
+}
+.about_sec{
+    background-color: #f6e6e0;
+}
+.about{
+    height: 80%;
+}
+.head h3{
+    color:#af1414;
+    margin-bottom: 2%;;
+}
+.head h4{
+    color: #1c2273;
+    text-transform: capitalize;
+    font-family: "Crimson Text", serif;
+    margin-bottom: 1%;
+}
+

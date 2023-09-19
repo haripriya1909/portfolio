@@ -10,16 +10,16 @@
         <!-- bootstrap link -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
+
     <body>
-        <!-- <div class="main"> -->
-    <div class="homepage d-block">
+<div class="main d-md-flex flex-md-column">
         <div class="nav-part d-md-flex">
         <nav id="desktop-nav">
             <div class = "desktop-nav1 d-flex flex-row-reverse">
                 <ul class="nav-links d-flex">
-                    <li id="li1"><a href="#about">About</ a></li>
+                    <li id="li1"><a href=".about">About</ a></li>
                     <li id="li1"><a href="#experience">Experience</ a> </li>
-                    <li id="li1"><a href="#skills">Skills</ a> </li>
+                    <li id="li1"><a href="#skills">Skills &amp; tools</ a> </li>
                     <li id="li1"><a href="#projects">Projects</ a>  </li>
                     <li id="li1"><a href="#education">Education</ a>  </li>
                     <li id="li1"><a href="#contact">Contact</ a>  </li>
@@ -28,7 +28,7 @@
         </nav>
         <nav id="mobile-nav" >
         <div class = "hamburger" >
-            <div class="hamburger-icon d-flex flex-md-column" onclick="toggleMenu()">
+            <div class="hamburger-icon d-flex flex-md-column" onclick15204441="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -37,7 +37,7 @@
             <ul class="nav-links d-md-flex flex-md-column p-2-md">
                 <li id="li1"><a href="#about"  onclick="toggleMenu()">About</ a></li>
                 <li id="li1"><a href="#experience"  onclick="toggleMenu()">Experience</ a> </li>
-                <li id="li1"><a href="#skills"  onclick="toggleMenu()">Skills</ a> </li>
+                <li id="li1"><a href="#skills"  onclick="toggleMenu()">Skill & tools</ a> </li>
                 <li id="li1"><a href="#projects"  onclick="toggleMenu()">Projects</ a>  </li>
                 <li id="li1"><a href="#education"  onclick="toggleMenu()">Education</ a>  </li>
                 <li id="li1"><a href="#contact"  onclick="toggleMenu()">Contact</ a>  </li>
@@ -46,21 +46,37 @@
         </div>
         </nav>
     </div>
-    <div class="intro d-md-flex">
-            <h1 d-md-flex >
-                <span class="gday no-underline">G'day, I'm Haripriya!</span>
-                I'm a <b>Computer Science Undergraduate</b>
-                and
+    <div class="homepage d-block"></div>
+     <div class="intro d-md-flex text-center p - 3">
+            <h1 class="h1-md d-block">
+                <span class="gday fs-2">G'day, I'm Haripriya!</span><br>
+                <p>I'm a <b d-inline>Computer Science Undergraduate</b><br>
+                and</p>
                 <span id="element"></span>
-                </h1>
-                <div class="right d-md-flex p-2-md">
-                    right one
-                </div>
+            </h1>
+                    <div class="flower"><img src="files/images.jpeg"class="img-fluid" ></div>
     </div>
     </div>
-    <div class="about">
-        <div id="about"></div>
-    </div>
+    <div class="about_sec d-md-flex flex-md-column" >
+        <div class="head d-md-flex flex-md-column p-5">
+            <h3 class="h3">ABOUT</h3>
+            <h4 class="h4">Who is Haripriya?</h4>
+        </div>
+        <div class="about d-md-flex flex-md-row" >
+          <div  class="left_sec d-md-flex">
+            <div class="pic d-md-flex mx-auto p-1">
+                <img src="files/DSC_0215.JPG " class="img-fluid">
+            </div>
+          </div>
+            <div class="right_sec text-start">
+                <h4>A curiosity driven Front-end Developer and Problem Solver</h4>
+                <p>I'm passionate about bringing both the technical and visual aspects of digital products to life.
+                    I am a Computer Science Undergraduate from <span>Hansraj College , University of Delhi</span> , 
+                    a self-motivated learner who is happiest when she's creating, learning, exploring and thinking about how to make things better.  
+                    I sweat the details.I'm available for freelance work,feel free to reach out and say hello! &#129299</p>
+            </div>
+        </div>
+   </div>
     
     <div id="experience"></div>
     <div id="skills"></div>
@@ -68,7 +84,7 @@
     <div id="education"></div>
     <div id="contact"></div>
 
-<!-- </div> -->
+</div>
         
         
         
@@ -82,10 +98,11 @@
   <!-- Setup and start animation! -->
   <script>
     var typed = new Typed('#element', {
-      strings: ['Web developer.', 'Italian food maker.' , ' Dancer.', 'optimist.', 'Traveller.','Marvel movies fan.'],
-      typeSpeed: 50,
+      strings: ['Web developer. &#128421;', 'Problem Solver.&#128511;' , 'Italian food maker. &#127860;' , ' Dancer.&#128131;', 'optimist.&#128330;', 'Traveller.&#127956;','Superhero movies fan.&#128165;'],
+      typeSpeed: 60,
       fadeOut: true,
-      loop:true
+      loop:true,
+      showCursor:false
     });
   </script>
 </body>
